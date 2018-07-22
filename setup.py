@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-    name='websiteimproved',
-    packages=['websiteimproved'],
+    name='dumbnews',
+    packages=['dumbnews'],
     include_package_data=True,
     install_requires=[
         'flask',
