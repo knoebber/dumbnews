@@ -1,0 +1,4 @@
+include dumbnews/schema.sql
+graft dumbnews/static
+graft dumbnews/templates
+global-exclude *.pyc
