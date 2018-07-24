@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+{% block header %}
+<h1>{% block title %}{{title}}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  {% set news = sorts['new'](feeds) %}
+  {% for article in news %}
+    <h3><a href="{{article.link}}">{{article.title}}</a></h2>
+    <h5>{{article.updated}}</h4>
+    <hr>
+  {% endfor %}
+{% endblock %}
