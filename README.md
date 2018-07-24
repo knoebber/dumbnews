@@ -26,5 +26,3 @@ $ flask run --host=0.0.0.0
 Feed parsing is handled with the `feedparser` library, and therefore handles all of their [supported feed formats](https://pythonhosted.org/feedparser/introduction.html).
 
 All configuration files must be placed into the 'dumbnews/feeds' directory. The app sorts and displays configurations by their associated file name, so if you wish to have a configuration labeled "World News" within the app, name your associated configuration file "World\ News". Configuration files should have a list of newline-separated urls associated with feeds you wish to be displayed together.
-
-An example configuration file can be found at `feeds/Example`.
