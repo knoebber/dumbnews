@@ -2,11 +2,13 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 {% block header %}
-<h1>{% block title %}Feeds{% endblock %}</h1>
+  <h1>{% block title %}Feeds{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
+  <ul> 
   {% for title in titles %}
-    <h2><a href="news/{{title}}">{{title}}</a></h2>
+    <li><h2><a href="news/{{title}}">{{title}}</a></h2></li>
   {% endfor %}
+  </ul>
 {% endblock %}
